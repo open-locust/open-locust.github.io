@@ -1,0 +1,729 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Open Locust Datasets and Models">
+      
+      
+        <link rel="canonical" href="https://open-locust.github.io/projects/primary/">
+      
+      
+        <meta name="author" content="Samapriya Roy">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.1">
+    
+    
+      
+        <title>Primary Datasets - Open Locust</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ab47bc">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Google Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="purple" data-md-color-accent="pink">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#primary-datasets" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://open-locust.github.io" title="Open Locust" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Open Locust
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Primary Datasets
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/open-locust/open-locust.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Open Locust
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://open-locust.github.io" title="Open Locust" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Open Locust
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/open-locust/open-locust.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Open Locust
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Datasets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Primary Datasets
+      </label>
+    
+    <a href="./" title="Primary Datasets" class="md-nav__link md-nav__link--active">
+      Primary Datasets
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soil-type" title="Soil Type" class="md-nav__link">
+    Soil Type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soil-moisture" title="Soil Moisture" class="md-nav__link">
+    Soil Moisture
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servir-products" title="SERVIR Products" class="md-nav__link">
+    SERVIR Products
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-citations" title="Data citations:" class="md-nav__link">
+    Data citations:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soil-moisture-active-passive-smap" title="Soil Moisture Active Passive (SMAP)" class="md-nav__link">
+    Soil Moisture Active Passive (SMAP)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#landuselandcover" title="Landuse/landcover:" class="md-nav__link">
+    Landuse/landcover:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windspeed-and-other-met-variables" title="WindSpeed (and other met variables):" class="md-nav__link">
+    WindSpeed (and other met variables):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rainfall" title="Rainfall" class="md-nav__link">
+    Rainfall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locust-location-data" title="Locust location data" class="md-nav__link">
+    Locust location data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-aggregators" title="Data Aggregators" class="md-nav__link">
+    Data Aggregators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gee-data/" title="Google Earth Engine Datasets" class="md-nav__link">
+      Google Earth Engine Datasets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Models & Applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Models & Applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../models-frameworks/" title="Models & Frameworks" class="md-nav__link">
+      Models & Frameworks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apps-dash/" title="Applications & Dashboards" class="md-nav__link">
+      Applications & Dashboards
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soil-type" title="Soil Type" class="md-nav__link">
+    Soil Type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soil-moisture" title="Soil Moisture" class="md-nav__link">
+    Soil Moisture
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servir-products" title="SERVIR Products" class="md-nav__link">
+    SERVIR Products
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-citations" title="Data citations:" class="md-nav__link">
+    Data citations:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soil-moisture-active-passive-smap" title="Soil Moisture Active Passive (SMAP)" class="md-nav__link">
+    Soil Moisture Active Passive (SMAP)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#landuselandcover" title="Landuse/landcover:" class="md-nav__link">
+    Landuse/landcover:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windspeed-and-other-met-variables" title="WindSpeed (and other met variables):" class="md-nav__link">
+    WindSpeed (and other met variables):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rainfall" title="Rainfall" class="md-nav__link">
+    Rainfall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locust-location-data" title="Locust location data" class="md-nav__link">
+    Locust location data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-aggregators" title="Data Aggregators" class="md-nav__link">
+    Data Aggregators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/open-locust/open-locust.github.io/edit/master/docs/projects/primary.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="primary-datasets">Primary Datasets<a class="headerlink" href="#primary-datasets" title="Permanent link">&para;</a></h1>
+<h3 id="soil-type">Soil Type<a class="headerlink" href="#soil-type" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><a href="http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/">FAO Harmonized World Soil Database</a></p>
+</li>
+<li>
+<p><a href="https://data.isric.org/geonetwork/srv/eng/catalog.search#/home">ISRIC updated 250m dataset</a></p>
+</li>
+<li>
+<p><a href="http://portal.landpotential.org/#/landpksmap">LandPKS soil characteristics data</a>
+Feed the Future has collected plot-level data on soil characteristics for several of our population-based household surveys using LandPKS, including in Kenya, Ghana, and Mali; these data have also been collected extensively in Ethiopia and worldwide. Contact: Jeff Herrick at USDA is the lead on LandPKS</p>
+</li>
+</ul>
+<h3 id="soil-moisture">Soil Moisture<a class="headerlink" href="#soil-moisture" title="Permanent link">&para;</a></h3>
+<h4 id="servir-products">SERVIR Products<a class="headerlink" href="#servir-products" title="Permanent link">&para;</a></h4>
+<p>Here is a breakdown of what soil moisture products SERVIR is currently providing, where and what format they are in. There are two domains available for current model simulations, in East Africa and Southwest Asia (Data provided by FEWSNET), however, forecasted data are only available in East Africa. The data we are providing is volumetric soil moisture in the top 10 cm of the ground surface (i.e. percent of the soil that has water, so the max will usually be no greater that 50% (0.5)). The data is produced from the NOAH land surface model within  NASA’s Land Information System (LIS) framework that uses satellite based inputs (see references below). From the desert locusts experts that we have talked with, locust have 2 main requirements for successful breeding: that the volumetric soil moisture be in a specific range (~0.15 – 0.25) and that soil type be pretty sandy (we’ve found sand percentages between ~55-75% for locust observations).</p>
+<p>We are sharing the data in two different ways:
+TIFF file download. This is served through the URL:</p>
+<ul>
+<li><a href="https://gis1.servirglobal.net/data/locusts">SERVIR Locust Datasets</a></li>
+<li><a href="https://thredds.servirglobal.net/thredds/catalog/Locusts/catalog.html">Thredds Server Locusts Catalog</a></li>
+<li><a href="https://thredds.servirglobal.net/thredds/catalog/Locusts/catalog.html">WMS/OpenDAP access</a></li>
+</ul>
+<p>Or a quick preview of the latest data, this link displays the latest 15 day forecast (using the <a href="https://terria.servirglobal.net/#share=g-15e754f6fa9c54b05540a158c3511b37">THREDDS server</a>:</p>
+<h5 id="data-citations">Data citations:<a class="headerlink" href="#data-citations" title="Permanent link">&para;</a></h5>
+<p><em>Soil moisture modeled data provided by SERVIR and SPoRT, FEWSNET and GSFC using NASA Land Information System (Kumar et al., 2006; McNally et al., 2017, Case et al., 2016</em></p>
+<ul>
+<li>
+<p>Kumar, Sujay V., Christa D. Peters-Lidard, Yudong Tian, Paul R. Houser, James Geiger, S. Olden, L. Lighty et al. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1364815205001283">Land information system: An interoperable framework for high resolution land surface modeling.</a> Environmental modelling &amp; software 21, no. 10 (2006): 1402-1415.</p>
+</li>
+<li>
+<p>McNally, Amy, Kristi Arsenault, Sujay Kumar, Shraddhanand Shukla, Pete Peterson, Shugong Wang, Chris Funk, Christa D. Peters-Lidard, and James P. Verdin. <a href="https://www.nature.com/articles/sdata201712">A land data assimilation system for sub-Saharan Africa food and water security applications</a> Scientific data 4, no. 1 (2017): 1-19.</p>
+</li>
+<li>
+<p>Case, J., Mungai, J., Sakwa, V., Zavodsky, B.T., Srikishen, J., Limaye, A.S., Blankenship, C.B., 2016: <a href="https://ams.confex.com/ams/96Annual/webprogram/Manuscript/Paper287796/Case_etal_2016-AMSannual-LambSymp_talk2.4_extAbs_FINAL.pdf">Transitioning Enhanced Land Surface Initialization and Model Verification Capabilities to the Kenya Meteorological Service.</a> American Meteorological Society Fall Meeting, New Orleans.</p>
+</li>
+</ul>
+<h4 id="soil-moisture-active-passive-smap">Soil Moisture Active Passive (SMAP)<a class="headerlink" href="#soil-moisture-active-passive-smap" title="Permanent link">&para;</a></h4>
+<p>SMAP data is <a href="https://nsidc.org/data/smap/smap-data.html">available here</a></p>
+<p>10 KM FLDAS soil moisture (monthly latency) on GEE <a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_FLDAS_NOAH01_C_GL_M_V001">https://developers.google.com/earth-engine/datasets/catalog/NASA_FLDAS_NOAH01_C_GL_M_V001</a></p>
+<h4 id="landuselandcover">Landuse/landcover:<a class="headerlink" href="#landuselandcover" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://lpdaac.usgs.gov/products/mcd12q1v006/">Annual MODIS Land Cover (1km - 2018 latest)</a></li>
+<li><a href="http://2016africalandcover20m.esrin.esa.int/">Sentinel-2 (30m - 2016)</a></li>
+<li><a href="https://croplands.org/app/map?lat=0&amp;lng=0&amp;zoom=2">USGS Croplands (30m - 2015)</a></li>
+<li><a href="http://opendata.rcmrd.org/datasets/kenya-crop-mask-2015">Kenya crop type map (30m - 2015)</a></li>
+<li><a href="http://opendata.rcmrd.org/search?q=land%20cover">Eastern Africa Land cover maps (1990 - 2015)</a></li>
+<li><a href="https://search.earthdata.nasa.gov/search">Vegetation:MODIS, Landsat NDIV, EVI</a></li>
+<li><a href="https://iridl.ldeo.columbia.edu/maproom/Food_Security/Locusts/Regional/greenness.html">IRI Greenness</a></li>
+</ul>
+<h4 id="windspeed-and-other-met-variables">WindSpeed (and other met variables):<a class="headerlink" href="#windspeed-and-other-met-variables" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://www.windy.com">Windy (GFS, ECMWF)</a></li>
+<li><a href="https://locusts.arl.noaa.gov:8443/">HYSPLIT Model</a></li>
+<li><a href="https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-data-assimilation-system-gdas">Global Data Assimilation System</a></li>
+</ul>
+<h4 id="rainfall">Rainfall<a class="headerlink" href="#rainfall" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://iridl.ldeo.columbia.edu/maproom/Food_Security/Locusts/index.html">IRI  daily, decadal, monthly</a></li>
+</ul>
+<h4 id="locust-location-data">Locust location data<a class="headerlink" href="#locust-location-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://locust-hub-hqfao.hub.arcgis.com/">Locust Hub</a></li>
+</ul>
+<h4 id="data-aggregators">Data Aggregators<a class="headerlink" href="#data-aggregators" title="Permanent link">&para;</a></h4>
+<p>Plant Village <a href="https://pennstate.maps.arcgis.com/apps/opsdashboard/index.html#/121dd23b5e264e25a685b57f40042899">https://pennstate.maps.arcgis.com/apps/opsdashboard/index.html#/121dd23b5e264e25a685b57f40042899</a></p>
+<p><strong>Modeling frameworks:</strong>
+SERVIR West Africa
+<a href="https://chaponda.users.earthengine.app/view/locustrisk">https://chaponda.users.earthengine.app/view/locustrisk</a></p>
+<p>ICIPE</p>
+<p>PlantVillage</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gee-data/" title="Google Earth Engine Datasets" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Google Earth Engine Datasets
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/samapriya" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://medium.com/@samapriyaroy" class="md-footer-social__link fa fa-medium"></a>
+    
+      <a href="https://twitter.com/samapriyaroy" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/samapriya" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
